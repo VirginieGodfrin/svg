@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>02 lignes</title>
+	<style>
+		svg{
+			display : left ;
+			margin : 5px 5px;
+			border : 1px solid black ;
+			width: 500px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<svg>
+		<!-- abscisses et ordonnées du point de départ et du point d'arrivée -->
+		<line x1="50" y1="50" x2="150" y2="150" stroke="black" />
+		<!-- stroke-width = épaisseur -->
+		<line x1="100" y1="50" x2="200" y2="150" stroke="green" stroke-width="20" />
+		<!-- stroke-opacity = opacité du trait -->
+		<line x1="150" y1="50" x2="250" y2="150" stroke="green" stroke-width="20" stroke-opacity="0.5" />
+		<!-- stroke-linecap = bord du trait (butt - square - round)  -->
+		<line x1="200" y1="50" x2="300" y2="150" 
+			stroke="green" 
+			stroke-width="20" 
+			stroke-linecap="round" 
+		/>
+		<!-- stroke-dasharray = espace entre les pointilliés -->
+		<line x1="250" y1="50" x2="350" y2="150" 
+			stroke="green" 
+			stroke-width="20" 
+			stroke-dasharray="5 10 22" 
+		/>
+
+	</svg>
+</body>
+</html>

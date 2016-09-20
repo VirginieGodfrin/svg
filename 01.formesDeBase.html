@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>formes de base</title>
+	<style>
+		svg{
+			display : left ;
+			margin : 5px 5px;
+			border : 1px solid black ;
+			width : 400px;
+			height : 400px;
+		}
+		.orange{
+			stroke : yellow ;
+			stroke-width : 5px ;
+			fill : orange;
+		}
+		.blue{
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<!-- rectangle -->
+	<svg>
+		<!-- rectangle -->
+		<rect x="30px" y="30px" width="100px" height="200px" fill="grey" />
+		<!-- rectangle & radius -->
+		<rect x="150" y="80" width="200" height="100" rx = '20' ry = '20' />
+	</svg>
+	<!-- crecle -->
+	<svg>
+		<!-- cercle, abscisse, ordonnée, rayon, couleur de fond -->
+		<circle cx="100" cy="100" r="80" fill="green" />
+		<!-- fill-opacity= opacité sur la couleur de fond -->
+		<circle cx="150" cy="100" r="80" fill="blue" fill-opacity="0.5" />
+		<!-- stroke = contour -->
+		<circle 
+			cx="200" 
+			cy="250" 
+			r="40" 
+			fill="yellow"
+			stroke="red" 
+			stroke-width="40" 
+			stroke-opacity="0.5"
+		/>
+		<!-- attribut style -->
+		<circle 
+			cx="320" 
+			cy="100" 
+			r="50" 
+			style = "stroke : navy ; stroke-width : 10px ; fill : green " 
+		/>
+
+		<circle  
+			cx="340" 
+			cy="120" 
+			r="30"
+			class="orange"  
+		/>
+	</svg>
+
+	<!-- Ellipse -->
+	<svg>
+	<!-- cx: abscisse du centre, cy: ordonnée du centre , rx : rayon en abscisse, ry : rayon en ordonnée -->
+    <ellipse cx="200" cy="200" rx="130" ry="80" fill="pink" />
+	</svg>
+
+	<!-- coordonnées et dimanetions exprimées en poucentages -->
+	<svg class="blue">
+		<circle cx="50%" cy="50%" r="100" fill-opacity="0.5" fill="yellow"  />
+		<rect x='0%' y='50%' width='100%' height="50%" fill="navy"  fill-opacity="0.7"/>
+	</svg>
+
+</body>
+</html>
